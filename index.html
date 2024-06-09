@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRUD Operations</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>CRUD Operations</h1>
+  <div id="form-container">
+    <h2>Create/Update Entry</h2>
+    <form id="entry-form">
+      <input type="hidden" id="entry-id">
+      <label for="sl_no">Serial Number:</label>
+      <input type="text" id="sl_no" required>
+      <label for="sales_purchase">Sales/Purchase:</label>
+      <input type="text" id="sales_purchase" required>
+      <label for="date">Date:</label>
+      <input type="date" id="date" required>
+      <label for="party_name">Party Name:</label>
+      <input type="text" id="party_name" required>
+      <label for="details">Details:</label>
+      <input type="text" id="details" required>
+      <label for="weight">Weight:</label>
+      <input type="text" id="weight">
+      <label for="manpower">Manpower:</label>
+      <input type="text" id="manpower">
+      <label for="material">Material:</label>
+      <input type="text" id="material">
+      <label for="freight">Freight:</label>
+      <input type="text" id="freight">
+      <label for="maintainance">Maintainance:</label>
+      <input type="text" id="maintainance">
+      <label for="sales">Sales:</label>
+      <input type="text" id="sales">
+      <label for="payment_received">Payment Received:</label>
+      <input type="text" id="payment_received">
+      <label for="amount_paid">Amount Paid:</label>
+      <input type="text" id="amount_paid">
+      <label for="balance">Balance:</label>
+      <input type="text" id="balance">
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <div id="entries-container">
+    <h2>Entries</h2>
+    <table id="entries-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Serial Number</th>
+          <th>Sales/Purchase</th>
+          <th>Date</th>
+          <th>Party Name</th>
+          <th>Details</th>
+          <th>Weight</th>
+          <th>Manpower</th>
+          <th>Material</th>
+          <th>Freight</th>
+          <th>Maintainance</th>
+          <th>Sales</th>
+          <th>Payment Received</th>
+          <th>Amount Paid</th>
+          <th>Balance</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
